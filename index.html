@@ -32,7 +32,7 @@
             justify-content: center;
             align-items: center;
             
-            /* Pozadí - OPRAVA */
+            /* Pozadí */
             background-image: url('https://www.katerinaheallo.com/wp-content/uploads/2025/12/hero-image.jpg');
             background-size: cover;
             background-position: center;
@@ -118,6 +118,17 @@
             margin-bottom: 8px;
             color: var(--primary-dark);
             font-size: 1em;
+        }
+        
+        /* Styl pro odkaz uvnitř labelu (GDPR) */
+        label a {
+            color: var(--primary-dark);
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        
+        label a:hover {
+            color: var(--primary-color);
         }
 
         input[type="text"], 
@@ -361,7 +372,7 @@
                 <div class="radio-group">
                     <div class="radio-item">
                         <input type="radio" id="gdpr_ano" name="gdpr" value="yes" required>
-                        <label for="gdpr_ano">Souhlasím s přidáním do newsletteru a zpracováním údajů (GDPR).</label>
+                        <label for="gdpr_ano">Souhlasím s přidáním do newsletteru a <a href="https://www.katerinaheallo.com/ochrana-osobnich-udaju/" target="_blank">zpracováním údajů (GDPR)</a>.</label>
                     </div>
                     <div class="radio-item">
                         <input type="radio" id="gdpr_ne" name="gdpr" value="no">
